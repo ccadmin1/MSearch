@@ -1,5 +1,7 @@
 import os
-import logging, choice, random 
+import logging
+import random
+import choice
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from info import START_MSG, CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, BOT_PICS
