@@ -314,7 +314,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                         InlineKeyboardButton('Main Channel', url='https://t.me/+0WycHXxXrWExNmI1'),
-                        InlineKeyboardButton('CinemaCollections', url="https://t.me/cinemacollections')
+                        InlineKeyboardButton('CinemaCollections', url='https://t.me/cinemacollections')
                     ]
                     ]
                 
