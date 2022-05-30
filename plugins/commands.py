@@ -27,7 +27,7 @@ async def start(bot, cmd):
             except UserNotParticipant:
                 ident, file_id = cmd.text.split("_-_-_-_")
                 chat_id=cmd.from_user.id,
-                    photo=f"{random.choice(BOT_PICS)}",
+                    photo=random.choice(BOT_PICS),
                     caption="** 🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭\n\n🔊 ഞങ്ങളുടെ 𝙈𝙖𝙞𝙣 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 ജോയിൻ ചെയ്താൽ മാത്രമേ സിനിമ ലഭിക്കുകയുള്ളൂ.... 😁\n\nJoin ചെയ്ത ശേഷം Try Again ബട്ടൺ ക്ലിക്ക് ചെയ്യൂ.😁 **",
                     reply_markup=InlineKeyboardMarkup(
                         [
@@ -82,7 +82,7 @@ async def start(bot, cmd):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_photo(
             chat_id=cmd.from_user.id,
-            photo=f"{random.choice(BOT_PICS)}",
+            photo=random.choice(BOT_PICS),
             caption="**Please Join My Updates Channel to use this Bot!**",
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -94,7 +94,7 @@ async def start(bot, cmd):
         )
     else:
         await cmd.reply_photo(
-            photo=f"{random.choice(BOT_PICS)}",
+            photo=random.choice(BOT_PICS),
             caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [
