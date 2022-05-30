@@ -330,7 +330,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                         InlineKeyboardButton('Main Channel', url='https://t.me/+0WycHXxXrWExNmI1'),
-                        InlineKeyboardButton('CinemaCollections', url='https://t.me/cinemacollections')
+                        InlineKeyboardButton('CinemaCollections', url='https://t.me/+f40KXF-nGpU0ZmRl')
                     ]
                     ]
                 
@@ -361,7 +361,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"@cinemacollections"
                 buttons = [
                     [
-                        InlineKeyboardButton('Update Channel', url='https://t.me/+0WycHXxXrWExNmI1')
+                        InlineKeyboardButton('Update Channel', url='https://t.me/+f40KXF-nGpU0ZmRl')
                     ]
                     ]
                 
