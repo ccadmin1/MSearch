@@ -85,7 +85,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                        InlineKeyboardButton("Join Updates Channel", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -99,10 +99,10 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('How to Use Me', url='https://t.me/searchitrobotupdates')
+                        InlineKeyboardButton('How to Use Me', url='https://t.me/+0WycHXxXrWExNmI1')
                     ],
                     [
-                        InlineKeyboardButton('About', url='https://t.me/searchitrobotupdates')
+                        InlineKeyboardButton('About', url='https://t.me/+0WycHXxXrWExNmI1')
                     ]
                 ]
             )
@@ -191,8 +191,7 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/GrandCinemas'),
-            InlineKeyboardButton('Source Code', url='https://github.com')
+            InlineKeyboardButton('Update Channel', url='https://t.me/CinemaCollections')
         ]
         ]
     await message.reply(text="Language : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com'>Click here</a>\nUpdate Channel : <a href='https://t.me/GrandCinemas'>Update</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
