@@ -31,10 +31,10 @@ async def start(bot, cmd):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                                InlineKeyboardButton("Join Updates Channel", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton(" 🔄 Retry", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -63,7 +63,7 @@ async def start(bot, cmd):
                         print(e)
                         f_caption=f_caption
                 if f_caption is None:
-                    f_caption = f"@searchitrobot"
+                    f_caption = f"@cinemacollections"
                 buttons = [
                     [
                         InlineKeyboardButton('Search Again', switch_inline_query_current_chat='')
@@ -98,11 +98,10 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('How to Use Me', url='https://t.me/+0WycHXxXrWExNmI1')
+                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat='') 
                     ],
                     [
-                        InlineKeyboardButton('About', url='https://t.me/+0WycHXxXrWExNmI1')
+                        InlineKeyboardButton('How to Use Me', url='https://t.me/+0WycHXxXrWExNmI1')
                     ]
                 ]
             )
@@ -194,4 +193,4 @@ async def bot_info(bot, message):
             InlineKeyboardButton('Update Channel', url='https://t.me/CinemaCollections')
         ]
         ]
-    await message.reply(text="Language : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com'>Click here</a>\nUpdate Channel : <a href='https://t.me/GrandCinemas'>Update</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="@cinemacollections", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
