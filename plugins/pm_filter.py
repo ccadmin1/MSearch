@@ -2,7 +2,7 @@
 from info import AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, API_KEY, AUTH_GROUPS, BUTTON, BOT_PICS
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
-import re
+import re, asyncio, random
 from pyrogram.errors import UserNotParticipant
 from utils import get_filter_results, get_file_details, is_subscribed, get_poster
 BUTTONS = {}
@@ -83,10 +83,14 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+                dell=await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+                await asyncio.sleep(600)
+                await dell.delete()
 
             else:
-                await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+                dell=await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+                await asyncio.sleep(600)
+                await dell.delete()
             return
 
         data = BUTTONS[keyword]
@@ -104,9 +108,13 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+            dell=await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+            await asyncio.sleep(600)
+            await dell.delete()
         else:
-            await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+            dell=await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+            await asyncio.sleep(600)
+            await dell.delete()
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
@@ -151,9 +159,13 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+                dell=await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+                await asyncio.sleep(600)
+                await dell.delete()
             else:
-                await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+                dell=await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+                await asyncio.sleep(600)
+                await dell.delete()
             return
 
         data = BUTTONS[keyword]
@@ -171,9 +183,13 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+            dell=await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+            await asyncio.sleep(600)
+            await dell.delete()
         else:
-            await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+            dell=await message.reply_photo(photo=random.choice(BOT_PICS), reply_markup=InlineKeyboardMarkup(buttons))
+            await asyncio.sleep(600)
+            await dell.delete()
 
     
 def get_size(size):
