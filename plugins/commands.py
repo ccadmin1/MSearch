@@ -29,7 +29,7 @@ async def start(bot, cmd):
                 await bot.send_photo(
                     chat_id=cmd.from_user.id,
                     photo=f"{random.choice(BOT_PICS)}",
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    caption="**Please Join My Updates Channel to use this Bot!**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -84,7 +84,7 @@ async def start(bot, cmd):
         await bot.send_photo(
             chat_id=cmd.from_user.id,
             photo=f"{random.choice(BOT_PICS)}",
-            text="**Please Join My Updates Channel to use this Bot!**",
+            caption="**Please Join My Updates Channel to use this Bot!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -171,7 +171,7 @@ async def delete(bot, message):
         await message.reply('Reply to file with /delete which you want to delete', quote=True)
         return
 
-    for file_type in ("document", "video", "audio"):
+    for file_type in ("document", "video"):
         media = getattr(reply, file_type, None)
         if media is not None:
             break
