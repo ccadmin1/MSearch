@@ -26,10 +26,9 @@ async def start(bot, cmd):
                     return
             except UserNotParticipant:
                 ident, file_id = cmd.text.split("_-_-_-_")
-                await bot.send_photo(
-                    chat_id=cmd.from_user.id,
+                chat_id=cmd.from_user.id,
                     photo=f"{random.choice(BOT_PICS)}",
-                    caption="**Please Join My Updates Channel to use this Bot!**",
+                    caption="** 🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭\n\n🔊 ഞങ്ങളുടെ 𝙈𝙖𝙞𝙣 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 ജോയിൻ ചെയ്താൽ മാത്രമേ സിനിമ ലഭിക്കുകയുള്ളൂ.... 😁\n\nJoin ചെയ്ത ശേഷം Try Again ബട്ടൺ ക്ലിക്ക് ചെയ്യൂ.😁 **",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -103,7 +102,7 @@ async def start(bot, cmd):
                         InlineKeyboardButton("Search Here", switch_inline_query_current_chat='') 
                     ],
                     [
-                        InlineKeyboardButton('How to Use Me', url='https://t.me/+0WycHXxXrWExNmI1')
+                        InlineKeyboardButton('How to Use Me', url='https://t.me/+f40KXF-nGpU0ZmRl')
                     ]
                 ]
             )
