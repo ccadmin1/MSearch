@@ -288,8 +288,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='https://t.me/GrandCinemas'),
-                    InlineKeyboardButton('Source Code', url='https://t.me/SearchItRobotUpdates')
+                    InlineKeyboardButton('Update Channel', url='https://t.me/+0WycHXxXrWExNmI1'),
+                    InlineKeyboardButton('Source Code', url='https://t.me/+0WycHXxXrWExNmI1')
                 ]
                 ]
             await query.message.edit(text="<b>Developer : <a href='https://t.me/SearchItRobotUpdates'>Unknown</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -313,8 +313,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"➠➠➠ 𝓢𝓮𝓪𝓻𝓬𝓱𝓘𝓣𝓡𝓸𝓫𝓸𝓽"
                 buttons = [
                     [
-                        InlineKeyboardButton('Main Channel', url='https://t.me/GrandCinemas'),
-                        InlineKeyboardButton('Update Channel', url="https://t.me/SearchItRobotUpdates')
+                        InlineKeyboardButton('Main Channel', url='https://t.me/+0WycHXxXrWExNmI1'),
+                        InlineKeyboardButton('Update Channel', url="https://t.me/+0WycHXxXrWExNmI1')
                     ]
                     ]
                 
@@ -345,7 +345,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"➠➠➠ 𝓢𝓮𝓪𝓻𝓬𝓱𝓘𝓣𝓡𝓸𝓫𝓸𝓽"
                 buttons = [
                     [
-                        InlineKeyboardButton('Update Channel', url='https://t.me/SearchItRobotUpdates')
+                        InlineKeyboardButton('Update Channel', url='https://t.me/+0WycHXxXrWExNmI1')
                     ]
                     ]
                 
